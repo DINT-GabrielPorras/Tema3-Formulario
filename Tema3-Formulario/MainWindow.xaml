@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tema3_Formulario"
         mc:Ignorable="d"
-        Title="Formulario" MinHeight="550" MinWidth="850">
+        Title="Formulario" Height="550" Width="850" MinHeight="550" MinWidth="850">
     <DockPanel LastChildFill="false">
         
         <TextBlock DockPanel.Dock="Top" Text="Formulario" HorizontalAlignment="Center" FontSize="40" FontWeight="Bold"/>
@@ -27,20 +27,20 @@
                 <DropShadowEffect/>
             </Border.Effect>
             <StackPanel Background="#FF57CDFF">
-                <DockPanel LastChildFill="false" Margin="5">
+                <DockPanel LastChildFill="True" Margin="5">
                     <TextBlock DockPanel.Dock="Left" Text="Nombre"/>
-                    <TextBox Width="400"/>
-                    <Image DockPanel.Dock="Right" Source="/info.png" Height="15" Width="15"/>
+                    <Image DockPanel.Dock="Right" Source="/info.png" Height="15" Width="15" ToolTip="Máximo 100 caracteres"/>
+                    <TextBox/>
                 </DockPanel>
-                <DockPanel LastChildFill="false" Margin="5">
+                <DockPanel LastChildFill="True" Margin="5">
                     <TextBlock DockPanel.Dock="Left" Text="Edad"/>
-                    <TextBox Width="400"/>
-                    <Image DockPanel.Dock="Right" Source="/info.png" Height="15" Width="15"/>
+                    <Image DockPanel.Dock="Right" Source="/info.png" Height="15" Width="15" ToolTip="Número entero entre 0 y 100"/>
+                    <TextBox/>
                 </DockPanel>
-                <DockPanel LastChildFill="false" Margin="5">
+                <DockPanel LastChildFill="True" Margin="5">
                     <TextBlock DockPanel.Dock="Left" Text="Dirección"/>
-                    <TextBox Width="400"/>
-                    <Image DockPanel.Dock="Right" Source="/info.png" Height="15" Width="15"/>
+                    <Image DockPanel.Dock="Right" Source="/info.png" Height="15" Width="15" ToolTip="Incluir el código postal"/>
+                    <TextBox/>
                 </DockPanel>
             </StackPanel>
         </Border>
